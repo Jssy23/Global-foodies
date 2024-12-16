@@ -1,0 +1,29 @@
+.nav-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-mobile img {
+    height: auto; 
+    width: auto; 
+}
+
+@media (max-width: 768px) {
+    .nav-mobile {
+        flex-direction: row;
+        padding: 10px;
+    }
+}
+
+.ondertitel-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.prijs-mandje {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

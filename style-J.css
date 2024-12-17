@@ -1,12 +1,114 @@
+body {
+    font-family: 'Boring Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    margin-top: 10%;
+}
+
 .nav-mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.nav-mobile img {
-    height: auto; 
+.nav-icon {
+    height: 30px; 
     width: auto; 
+}
+
+.nav-logo {
+    width: 80px;
+    height: auto;
+}
+
+section {
+    position: relative;
+}
+
+section h2 {
+    color: #FDC543;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+.hand-fruit {
+    position: absolute;
+    top: -40%; 
+    right: 0;
+    z-index: 1;
+}
+
+.hand-fruit img {
+    width: 200px;
+    object-fit: cover;
+    border-radius: 0 0 1% 1%;
+}
+
+.achtergrondkleur {
+    background-color: #F1EDD3;
+    border-radius: 1%;
+    padding: 20px;
+    margin-top: 150px;
+    position: relative;
+} 
+
+article img {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.ondertitel-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prijs-mandje {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-image {
+    width: 20px;
+    height: auto;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #F1EDD3;
+}
+
+.achtergrondkleur > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    flex-basis: 45%; 
+    margin: 10px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+article img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 30px;
+}
+
+.ondertitel-item {
+    margin-top: 10px; 
+    width: 100%; 
 }
 
 @media (max-width: 768px) {
@@ -14,16 +116,23 @@
         flex-direction: row;
         padding: 10px;
     }
+    
+    article {
+        flex-basis: 45%; 
+    }
+    .hand-fruit {
+        position: absolute;
+        top: -13%; 
+        right: 0;
+        z-index: 1;
+    }
+    .hand-fruit img {
+        width: 120px; 
+    }
 }
 
-.ondertitel-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.prijs-mandje {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+@media (min-width: 769px) {
+    article {
+        flex-basis: 22%; 
+    }
 }

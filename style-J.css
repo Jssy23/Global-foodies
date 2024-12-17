@@ -67,10 +67,18 @@ article img {
     align-items: center;
 }
 
+.ondertitel-item p {
+    font-weight: bold;
+}
+
 .prijs-mandje {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.prijs-mandje p {
+    margin-right: 10px;
 }
 
 .cart-image {
@@ -83,6 +91,38 @@ article img {
 
 footer {
     background-color: #F1EDD3;
+    padding: 20px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+.tiktok {
+    padding-right: 2%;
+}
+
+.twitter {
+    padding-right: 2%;
+}
+
+.contact-rood {
+    color: #E83E3F;
+}
+
+.footer-rood {
+    color: #E83E3F;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logo-footer {
+    width: 120px; 
+    height: auto;
 }
 
 .achtergrondkleur > div {
